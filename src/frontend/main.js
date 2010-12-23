@@ -87,11 +87,11 @@ with (KeyEvent) {
   add("0"  , Scroll.first     );
   add("$"  , Scroll.last      );
 
-  add("k"  , Scroll.up        );
-  add("j"  , Scroll.down      );
-  add("h"  , Scroll.left      );
-  add("l"  , Scroll.right     );
-  add("%"  , Scroll.toPercent );
+//  add("k"  , Scroll.up        );
+//  add("j"  , Scroll.down      );
+//  add("h"  , Scroll.left      );
+//  add("l"  , Scroll.right     );
+//  add("%"  , Scroll.toPercent );
 
 //  add("<C-f>" , Scroll.nextPage     );
 //  add("<C-b>" , Scroll.prevPage     );
