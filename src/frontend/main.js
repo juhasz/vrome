@@ -48,37 +48,37 @@ with (KeyEvent) {
   add("<F1>", showHelp );
 
   // Zoom
-  add("zi", Zoom["in"]      );
-  add("zo", Zoom.out        );
-  add("zm", Zoom.more       );
-  add("zr", Zoom.reduce     );
-  add("zz", Zoom.reset      );
-
-  add("zI", Zoom.cur_in     );
-  add("zO", Zoom.cur_out    );
-  add("zM", Zoom.cur_more   );
-  add("zR", Zoom.cur_reduce );
-  add("zZ", Zoom.cur_reset  );
+//  add("zi", Zoom["in"]      );
+//  add("zo", Zoom.out        );
+//  add("zm", Zoom.more       );
+//  add("zr", Zoom.reduce     );
+//  add("zz", Zoom.reset      );
+//
+//  add("zI", Zoom.cur_in     );
+//  add("zO", Zoom.cur_out    );
+//  add("zM", Zoom.cur_more   );
+//  add("zR", Zoom.cur_reduce );
+//  add("zZ", Zoom.cur_reset  );
 
 
   // Page
   add("]]", Page.next         );
   add("[[", Page.prev         );
-  add("Y" , Page.copySelected );
+//  add("Y" , Page.copySelected );
 
 
   // Url
   add("gu"    , Url.parent             );
   add("gU"    , Url.root               );
-  add("gf"    , Url.viewSource         );
-  add("gF"    , Url.viewSourceNewTab   );
-  add("<C-a>" , Url.increment          );
+//  add("gF"    , Url.viewSource         );
+  add("gf"    , Url.viewSourceNewTab   );
+  add("<C-e" , Url.increment          );
   add("<C-x>" , Url.decrement          );
-  add("o"     , Url.open               );
-  add("O"     , Url.openWithDefault    );
-  add("t"     , Url.tabopen            );
-  add("T"     , Url.tabopenWithDefault );
-  add("<C-y>" , Url.shortUrl           );
+//  add("o"     , Url.open               );
+//  add("O"     , Url.openWithDefault    );
+//  add("t"     , Url.tabopen            );
+//  add("T"     , Url.tabopenWithDefault );
+//  add("<C-y>" , Url.shortUrl           );
 
 
   // Scroll
@@ -93,10 +93,10 @@ with (KeyEvent) {
   add("l"  , Scroll.right     );
   add("%"  , Scroll.toPercent );
 
-  add("<C-f>" , Scroll.nextPage     );
-  add("<C-b>" , Scroll.prevPage     );
-  add("<C-d>" , Scroll.nextHalfPage );
-  add("<C-u>" , Scroll.prevHalfPage );
+//  add("<C-f>" , Scroll.nextPage     );
+//  add("<C-b>" , Scroll.prevPage     );
+//  add("<C-d>" , Scroll.nextHalfPage );
+//  add("<C-u>" , Scroll.prevHalfPage );
 
 
   // Tab
@@ -113,7 +113,7 @@ with (KeyEvent) {
 
   add("y"     , Tab.copyUrl      );
   add("g0"    , Tab.first        );
-  add("g^"    , Tab.first        );
+// add("g^"    , Tab.first        );
   add("g$"    , Tab.last         );
   add("<C-6>" , Tab.selectPrevious );
   add("<C-^>" , Tab.selectPrevious );
@@ -132,7 +132,7 @@ with (KeyEvent) {
 
   // Hint
   add("f"  , Hint.start         );
-  add("F"  , Hint.new_tab_start );
+  add("t"  , Hint.new_tab_start );
 
 
   // Search
@@ -199,6 +199,7 @@ with (KeyEvent) {
 with (CmdLine) {
   add("help", showHelp );
   add("bdelete", Buffer.deleteMatchHandle );
+  add("q", Tab.close);
 }
 
 // Initial
