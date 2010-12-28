@@ -146,8 +146,8 @@ with (KeyEvent) {
 
 
   // Buffer
-  add("b" , Buffer.gotoFirstMatch );
-  add("B" , Buffer.deleteMatch    );
+  // add("b" , Buffer.gotoFirstMatch );
+  // add("B" , Buffer.deleteMatch    );
 
 
   add("gi" , InsertMode.focusFirstTextInput );
