@@ -75,3 +75,24 @@ function getSelected() {
 function showHelp() {
   Post({action: "Tab.openUrl", url: chrome.extension.getURL("README.html"),newtab : true});
 }
+
+/**
+ * Remove spaceball divs from Flickr photo and all sizes-photo pages
+ */
+
+function flickrRealPhoto() {
+  var spaceball = false;
+  var parent;
+
+  if (document.getElementById("photo-drag-proxy")) { // on photo page
+    parent = document.getElementById("photo");
+    spaceball = document.getElementById("photo-drag-proxy");
+  } else if (document.getElementById("allsizes-photo")) { // on all sizes photo page
+    parent = document.getElementById("allsizes-photo");
+    spaceball = parent.childNodes[1];
+  }
+
+  if (spaceball) {
+    parent.removeChild(spaceball);
+  }
+}

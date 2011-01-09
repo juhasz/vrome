@@ -200,6 +200,7 @@ with (CmdLine) {
   add("help", showHelp );
   add("bdelete", Buffer.deleteMatchHandle );
   add("q", Tab.close);
+  add("fp", flickrRealPhoto);
 }
 
 // Initial
