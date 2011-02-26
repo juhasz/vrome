@@ -71,7 +71,7 @@ with (KeyEvent) {
   add("gu"    , Url.parent             );
   add("gU"    , Url.root               );
 //  add("gF"    , Url.viewSource         );
-  add("gf"    , Url.viewSourceNewTab   );
+//  add("gf"    , Url.viewSourceNewTab   );
   add("<C-e" , Url.increment          );
   add("<C-x>" , Url.decrement          );
 //  add("o"     , Url.open               );
@@ -87,11 +87,11 @@ with (KeyEvent) {
   add("0"  , Scroll.first     );
   add("$"  , Scroll.last      );
 
-//  add("k"  , Scroll.up        );
-//  add("j"  , Scroll.down      );
-//  add("h"  , Scroll.left      );
-//  add("l"  , Scroll.right     );
-//  add("%"  , Scroll.toPercent );
+  add("k"  , Scroll.up        );
+  add("j"  , Scroll.down      );
+  add("h"  , Scroll.left      );
+  add("l"  , Scroll.right     );
+  add("%"  , Scroll.toPercent );
 
 //  add("<C-f>" , Scroll.nextPage     );
 //  add("<C-b>" , Scroll.prevPage     );
