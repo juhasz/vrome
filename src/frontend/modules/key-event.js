@@ -55,7 +55,7 @@ var KeyEvent = (function() {
   }
 
 	function disable() {
-		CmdBox.set({title : ' -- PASS THROUGH -- ' });
+		CmdBox.set({title : ' -- PASS THROUGH -- ',timeout : 2000 });
     disableVrome = true;
 	}
 
