@@ -2,8 +2,8 @@ var Option = (function() {
   var options = {
     nextpattern : ['(下|后)一页','下一頁','^\\s*Next\\s*$','^>$','^More$','(^(>>|››|»))|((»|››|>>)$)'],
     previouspattern : ['(上|前)一页','上一頁','^\\s*Prev(ious)?\\s*$','^<$','(^(<<|‹‹|«))|((<<|‹‹|«)$)'],
-    disablesites : "mail.google.com, www.google.com/reader, docs.google.com, sreadsheets.google.com, twitter.com, github.com",
-    editor : "gvim -f",
+    disablesites : "mail.google.com, www.google.com/reader, docs.google.com, sreadsheets.google.com, plus.google.com, twitter.com, github.com, facebook.com",
+    editor : "mvim -f",
     searchengines : "{'google':'http://www.google.com/search?q={{keyword}}', 'yahoo':'http://search.yahoo.com/search?p={{keyword}}','wikipedia':'http://en.wikipedia.org/wiki/{{keyword}}','answers':'http://www.answers.com/main/ntquery?s={{keyword}}'}"
   }
 
